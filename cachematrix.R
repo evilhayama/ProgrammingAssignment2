@@ -20,7 +20,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## cacheSolve: Solve the matrix, using cached inverse if available
+## Arguments: x = matrix to be inverted, must be created with 
+##                the makeCacheMatrix function
 
 cacheSolve <- function(x, ...) {
     inv <- x$getinv()
